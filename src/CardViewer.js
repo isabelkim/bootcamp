@@ -1,5 +1,5 @@
 import React from 'react';
-import './CardViewer.css';
+// import './CardViewer.css';
 
 import { Link } from 'react-router-dom';
 
