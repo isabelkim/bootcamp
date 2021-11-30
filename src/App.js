@@ -39,11 +39,15 @@ class App extends React.Component {
             deleteCard={this.deleteCard}
           />
         </Route>
-        <Route exact path="/viewer">
+        <Route path="/viewer/:deckId">
           <CardViewer cards={this.state.cards} />
         </Route>
         <Route exact path="/">
           <Homepage/>
+        </Route>
+
+        <Route>
+          <div>Page not found!</div>
         </Route>
       </Switch>
     );
